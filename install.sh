@@ -1,7 +1,6 @@
 #!/bin/sh
 install_folder=/opt/fancontrol
-mkdir $install_folder
-mkdir $install_folder/src
+mkdir -p $install_folder/src
 chmod +x src/fan-pkexec
 chmod +x src/fan.py
 cp src/fan.py $install_folder/src/fan.py
